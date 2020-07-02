@@ -1,0 +1,27 @@
+
+.editor .ql-toolbar     {
+    border: 0  !important;
+    /* border-bottom: 1px solid #ececec  !important; */
+    
+}
+
+.editor .ql-toolbar{
+
+    /* background-color: #fff; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    background-color: #f9f9f9;
+  
+  }
+
+
+.editor .ql-container {
+    border: 0  !important;
+    
+}
+
+.editor{
+    background-color: #fff
+}
