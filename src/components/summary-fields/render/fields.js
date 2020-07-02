@@ -68,9 +68,9 @@ const Fields = (props) => {
           />
           <TextField
             id="standard-multiline-flexible"
-            error={localSummary ? (localSummary.length <= 73 ? false : true) : false}
+            error={localSummary ? (localSummary.length <= 150 ? false : true) : false}
             helperText={
-              localSummary && ( localSummary.length <= 73 ? "" : "limit exceeded (only 73 char limit)")
+              localSummary && ( localSummary.length <= 150 ? "" : "limit exceeded (only 150 char limit)")
             }
             label="summary"
             multiline
