@@ -94,7 +94,7 @@ const Summary = (props) =>{
       formData.append("image", imageAddress);
 
       axios
-        .post("http://localhost:5000/api/dash/images", formData, {
+        .post("/api/dash/images", formData, {
           headers: {
             // "Content-Type": "multipart/form-data",
             Authorization: "Bearer " + token,
