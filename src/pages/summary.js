@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Toolbar, LinearProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import axios from "axios";
+// import axios from "axios";
+import axios from "../util/axios";
 import { withRouter } from "react-router";
 
 import Navbar from "../components/navBar/navbar";
@@ -50,7 +51,7 @@ const Summary = (props) =>{
           setEmail(data.email.substring(0, data.email.indexOf("@")));
           axios
             .post(
-              "http://localhost:5000/api/dash/summary",
+              "/api/dash/summary",
               {
                 creator: data.userId,
                 smId: summaryId,
